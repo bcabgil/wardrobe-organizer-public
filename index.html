@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#FAF9F6" />
+  <meta name="description" content="100% Browser-Native Offline Wardrobe Organizer & AI Fashion Stylist for iPhone and Android" />
+
+  <!-- iOS Safari Home Screen Web App Safeguards -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="ATELIER" />
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.svg" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/icon-192.svg" />
+
+  <title>ATELIER — Wardrobe & AI Stylist</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./src/styles/safe-areas.css?v=31" />
+  <link rel="stylesheet" href="./src/styles/main.css?v=31" />
+  <link rel="stylesheet" href="./src/styles/components.css?v=31" />
+  <link rel="stylesheet" href="./src/styles/views.css?v=31" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Top Editorial App Bar -->
+    <header class="app-header">
+      <a href="#gallery" class="app-brand">
+        <h1 class="brand-title">ATELIER</h1>
+      </a>
+      <div class="header-actions">
+        <button type="button" id="header-season-pill" class="header-season-pill" title="Tap to switch Active Season">
+          WINTER
+        </button>
+      </div>
+    </header>
+
+    <!-- Dynamic Route Viewport -->
+    <main id="app-main-view" class="app-main" role="main"></main>
+
+    <!-- Mobile 5-Tab Bottom Bar -->
+    <div id="app-bottom-nav" class="app-bottom-nav-wrap"></div>
+  </div>
+
+  <script type="module" src="./src/app.js?v=31"></script>
+</body>
+</html>

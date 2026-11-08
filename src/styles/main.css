@@ -1,0 +1,168 @@
+/**
+ * main.css - Editorial Ivory & Obsidian Luxury Design System & Montserrat Light 300 Typography
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #FAF9F6;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #F2EFE9;
+  --border-subtle: #E6E2DA;
+  --border-focus: #111111;
+  --text-primary: #111111;
+  --text-secondary: #65615B;
+  --text-muted: #98938B;
+  --accent-gold: #C2A882;
+  --accent-gold-dim: rgba(194, 168, 130, 0.16);
+  --status-clean: #1F5C3F;
+  --status-clean-bg: #EBF4EF;
+  --status-wash: #9E4A24;
+  --status-wash-bg: #FBF1EB;
+  --danger: #B93829;
+  --font-display: 'Montserrat', 'Outfit', 'Avenir Next', 'Helvetica Neue', 'Segoe UI Light', -apple-system, sans-serif;
+  --font-sans: 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --shadow-soft: 0 4px 20px rgba(17, 17, 17, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-shell {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background: var(--bg-primary);
+}
+
+/* Header (scrolls naturally with page, solid unblurred surface) */
+.app-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.brand-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.32em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.header-season-pill {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 10px;
+  padding: 9px 18px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.header-season-pill:active {
+  background: var(--text-primary);
+  color: #FFFFFF;
+}
+
+.app-main {
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding-top: 14px;
+  overflow-x: hidden;
+}
+
+.view-section {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.section-header {
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  margin: 0 0 4px 0;
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.section-subtitle {
+  margin: 0;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.card-surface {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-muted {
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+}
+
+.ui-svg-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.ui-svg-icon-sm {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
